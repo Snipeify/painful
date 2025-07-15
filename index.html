@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Painful — The Untiered Legend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/images/painful.png" type="image/png">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    #tsparticles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('/images/backgrounder.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.4) blur(2px);
+      z-index: -1;
+    }
+
+    header {
+      padding: 20px 50px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 0 0 10px #000000;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      padding: 60px;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    .left-image {
+      flex: 1;
+    }
+
+    .left-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+
+    .tab-section {
+      flex: 3;
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+      transition: opacity 0.4s ease;
+      animation: fadeIn 1s ease;
+    }
+
+    .tab-section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .tab-section p {
+      font-size: 17px;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 900px) {
+      .content {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .left-image {
+        text-align: center;
+      }
+
+      .left-image img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="background"></div>
+<div id="tsparticles"></div>
+
+<header>
+  PAINFUL — THE UNTIERED LEGEND
+  <nav>
+    <a href="#" onclick="showTab('lore')">Lore</a>
+    <a href="#" onclick="showTab('origin')">Origin</a>
+    <a href="#" onclick="showTab('painful')">Painful</a>
+    <a href="#" onclick="showTab('legacy')">Legacy</a>
+  </nav>
+</header>
+
+<div class="content">
+  <div class="left-image">
+    <img src="/images/painful.png" alt="Painful">
+  </div>
+
+  <div class="tab-section" id="lore">
+    <h2>About Painful</h2>
+    <p>
+painful isn't just some random user, he's a force that came in after Harmoney. when Legacy unbanned Harmoney, that's when painful would show up—and he wouldn't just match Harmoney, he'd become greater. painful is one of the most dominant *untiered* minecraft players to ever touch the scene. he’s never taken a tier test, never cared to. he just shows up, outskills, and leaves. no ego, no flexing. he barely even shows a personality unless you're close to him.
+    </p>
+  </div>
+
+  <div class="tab-section hidden" id="origin">
+    <h2>The Origin</h2>
+    <p>
+people used to accuse him of using a voice changer. they thought it wasn’t real—but it was. before Harmoney? painful *was* already there. behind the name “ebedwars,” he used to spoof ping and cheat in 10v10s. he got caught. joined on alts. they found out. and then… came the name *Harmoney*. Harmoney entered the light, but behind the screen, it was all going dark.
+    </p>
+  </div>
+
+  <div class="tab-section hidden" id="painful">
+    <h2>The Rise of Painful</h2>
+    <p>
+but painful? he was different. painful had the same skill, even more. but no ego. no mask. just straight-up real. he would joke around, dark humor, laugh with his people. and when he stepped into the spotlight… he didn’t just try—he *grinded*. made his own thumbnails. edited his own videos. did *everything* himself. no shortcuts. no pity. and somehow? already hit 1k subs. and more coming.
+    </p>
+  </div>
+
+  <div class="tab-section hidden" id="legacy">
+    <h2>Legacy</h2>
+    <p>
+he's not just another sweaty eboy. he’s kind. legit now. no cheats, no bs. he *was* Harmoney, but now he’s *Painful*. and this time, he’s real.
+
+after death... we'll remember:  
+**Harmoney was for Painful**  
+because now,  
+we see the light.
+    </p>
+  </div>
+</div>
+
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-section').forEach(section => {
+      section.classList.add('hidden');
+    });
+    document.getElementById(tabId).classList.remove('hidden');
+  }
+
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 60 },
+      size: { value: 2 },
+      color: { value: "#000000" },
+      opacity: { value: 0.3 },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        outModes: "out"
+      },
+      links: {
+        enable: true,
+        distance: 120,
+        color: "#000000",
+        opacity: 0.25
+      }
+    },
+    background: { color: "transparent" }
+  });
+</script>
+
+</body>
+</html>
